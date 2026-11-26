@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal – Programação Web Frontend – UNIT">
+  <title>Vinicius | Portifólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+
+  <header class="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#sobre" class="logo">VO<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="sobre" class="section about" aria-labelledby="sobre-titulo">
+      <div class="container about__grid">
+        <div class="about__photo">
+          <img src="img/foto.jpeg" alt="Foto de perfil de Seu Nome" width="280" height="280">
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1 id="sobre-titulo">Vinicius </h1>
+          <p class="role">Estudante de Análise e Desenvolvimento de Sistemas e ELetrotecnica </p>
+          <p>
+            Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Tiradentes (UNIT) e curso 
+            ELetrotecnica no Instituo Federal de Sergipe, resido em Aracaju-SE. 
+            Gosto de aprender novas habilidades e resolver problemas.
+          </p>
+          <p>
+            Meus interesses incluem desenvolvimento web, design de interfaces e atuacao no ramo de eletricidade.
+            Minha aspiração é atuar como desenvolvedor frontend e crescer construindo produtos
+            que facilitem a vida das pessoas.
+          </p>
+          <a href="#contato" class="btn">Fale comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio" aria-labelledby="portfolio-titulo">
+      <div class="container">
+        <h2 id="portfolio-titulo" class="section__title">Portfólio</h2>
+
+        <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Meus projetos">
+          <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Projeto anterior">&#9664;</button>
+
+          <div class="carousel__viewport">
+            <ul class="carousel__track" id="track">
+
+              <li class="card">
+                <a href="c:\Users\OLIVE\Downloads\Lampada - Atividade\Lampada - Atividade\index.html" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto lampada">
+                  <img src="img/lampada.png" alt="Prévia do projeto Lampada" loading="lazy" width="400" height="240">
+                  <div class="card__body">
+                    <h3>Lampada</h3>
+                    <p>Site interagivel com uma lampada, o usuario pode acende-la ou apaga-la.</p>
+                    <span class="tags">HTML • CSS • JS</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card">
+                <a href=" c:\Users\OLIVE\Downloads\atividade_lista_tarefas (1)\atividade_lista_tarefas\index.html" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto App Escola Pública">
+                  <img src="img/lista_tarefas.png" alt="Prévia do projeto lista" loading="lazy" width="400" height="240">
+                  <div class="card__body">
+                    <h3>Lista de tarefas</h3>
+                    <p>Lista de tarefas interagivel com o usuário, pode adicionar ou remover tarefas.</p>
+                    <span class="tags">HTML • CSS • JS</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card">
+                <a href="c:\Users\OLIVE\Downloads\calculadora_atividade\Atividade 3\index.html" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto calxuladora">
+                  <img src="img/foto_calculadora.png" alt="Prévia do projeto calculadora" loading="lazy" width="400" height="240">
+                  <div class="card__body">
+                    <h3>Calculadora</h3>
+                    <p>Calculadora criada para resolver problemas matematicos.</p>
+                    <span class="tags">HTML • CSS  • JS</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card">
+                <a href="https://github.com/jaobrabo123/Projeto-Residencia.git" target="_blank" rel="noopener noreferrer" aria-label="Abrir site do app">
+                  <img src="img/foto_app.png" alt="Prévia do app" loading="lazy" width="400" height="240">
+                  <div class="card__body">
+                    <h3>aplicativo para escolas públicas</h3>
+                    <p>Aplicação para facilitar a vida dos alunos e coolaboradores, centralizando informacoes.</p>
+                    <span class="tags">React Native • TypeScript • JS</span>
+                  </div>
+                </a>
+              </li>
+
+             
+
+            </ul>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Próximo projeto">&#9654;</button>
+        </div>
+
+        <div class="carousel__dots" id="dots" role="tablist" aria-label="Escolher projeto"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section skills" aria-labelledby="skills-titulo">
+      <div class="container">
+        <h2 id="skills-titulo" class="section__title">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skill" data-level="70">
+            <span class="skill__name">HTML</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" aria-label="HTML: 90%">
+              <div class="skill__fill"><span>70%</span></div>
+            </div>
+          </li>
+          <li class="skill" data-level="60">
+            <span class="skill__name">CSS</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" aria-label="CSS: 80%">
+              <div class="skill__fill"><span>60%</span></div>
+            </div>
+          </li>
+          <li class="skill" data-level="70">
+            <span class="skill__name">JavaScript</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" aria-label="JavaScript: 70%">
+              <div class="skill__fill"><span>70%</span></div>
+            </div>
+          </li>
+          <li class="skill" data-level="60">
+            <span class="skill__name">TypeScript</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" aria-label="TypeScript: 65%">
+              <div class="skill__fill"><span>60%</span></div>
+            </div>
+          </li>
+          <li class="skill" data-level="60">
+            <span class="skill__name">UI/UX Design</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" aria-label="UI/UX Design: 60%">
+              <div class="skill__fill"><span>60%</span></div>
+            </div>
+          </li>
+          <li class="skill" data-level="70">
+            <span class="skill__name">Git / GitHub</span>
+            <div class="skill__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" aria-label="Git e GitHub: 75%">
+              <div class="skill__fill"><span>70%</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section id="contato" class="section contact" aria-labelledby="contato-titulo">
+      <div class="container">
+        <h2 id="contato-titulo" class="section__title">Contato 79991146220</h2>
+        
+        <div class="contact__grid">
+         
+
+          <!-- Mapa: apenas ponto macro (cidade/estado), sem endereço residencial -->
+          <div class="contact__box contact__map">
+            <iframe
+              title="Mapa mostrando Aracaju, Sergipe"
+              src="https://www.google.com/maps?q=Aracaju,+Sergipe,+Brasil&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+            <p class="map__caption">📍 Aracaju – SE, Brasil</p>
+          </div>
+
+          <div class="contact__box">
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="nome">Nome <span aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required aria-describedby="erro-nome">
+                <small class="error" id="erro-nome" role="alert"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required aria-describedby="erro-email">
+                <small class="error" id="erro-email" role="alert"></small>
+              </div>
+
+              <div class="field">
+                <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required aria-describedby="erro-mensagem"></textarea>
+                <small class="error" id="erro-mensagem" role="alert"></small>
+              </div>
+
+              <div class="form__actions">
+                <button type="submit" class="btn">Enviar</button>
+                <button type="reset" class="btn btn--ghost" id="resetBtn">Limpar</button>
+              </div>
+
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <p>Vinicius &copy; <span id="ano">2026</span>. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
